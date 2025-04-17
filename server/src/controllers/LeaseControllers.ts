@@ -5,11 +5,13 @@ const prisma = new PrismaClient();
 
 export const getLeases = async (req: Request, res: Response): Promise<void> => {
   try {
+    const { id } = req.params;
     const leases = await prisma.lease.findMany({
       include: {
         tenant: true,
         property: true,
       },
+      where: { propertyId: Number(id) },
     });
     res.json(leases);
   } catch (error: any) {
