@@ -15,7 +15,7 @@ const router = express.Router();
 
 router.get("/", getProperties);
 router.get("/:id", getProperty);
-router.get("/:id/leases", getLeases);
+router.get("/:id/leases", authMiddleware(["manager", "tenant"]), getLeases);
 router.post(
   "/",
   authMiddleware(["manager"]),
