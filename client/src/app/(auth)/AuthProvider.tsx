@@ -13,6 +13,7 @@ import {
 } from "@aws-amplify/ui-react";
 import "@aws-amplify/ui-react/styles.css";
 import { useRouter, usePathname } from "next/navigation";
+import Link from "next/link";
 
 Amplify.configure({
   Auth: {
@@ -29,9 +30,9 @@ const components = {
     return (
       <View className="mt-4 mb-7">
         <Heading level={3} className="!text-2xl !font-bold">
-          <a href="/">RENT</a>
+          <Link href="/">RENT</Link>
           <span className="text-secondary-500 font-light hover:!text-primary-300">
-            <a href="/">IFUL</a>
+            <Link href="/">IFUL</Link>
           </span>
         </Heading>
         <p className="text-muted-foreground mt-2">
