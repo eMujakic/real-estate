@@ -16,19 +16,19 @@ const FooterSection = () => {
           <nav className="mb-4">
             <ul className="flex space-x-6">
               <li>
-                <Link href="/about">About Us</Link>
+                <Link href="/search">About Us</Link>
               </li>
               <li>
-                <Link href="/contact">Contact Us</Link>
+                <Link href="/search">Contact Us</Link>
               </li>
               <li>
-                <Link href="/faq">FAQ</Link>
+                <Link href="/search">FAQ</Link>
               </li>
               <li>
-                <Link href="/terms">Terms</Link>
+                <Link href="/search">Terms</Link>
               </li>
               <li>
-                <Link href="/privacy">Privacy</Link>
+                <Link href="/search">Privacy</Link>
               </li>
             </ul>
           </nav>

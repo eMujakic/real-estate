@@ -3,7 +3,6 @@
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
 
 const CallToAction = () => {
   return (
@@ -40,13 +39,12 @@ const CallToAction = () => {
               >
                 Search
               </button>
-              <Link
-                href="/signup"
+              <button
+                 onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                 className="inline-block text-white bg-secondary-500 rounded-lg px-6 py-3 font-semibold hover:bg-secondary-600"
-                scroll={false}
               >
                 Sign Up
-              </Link>
+              </button>
             </div>
           </div>
         </div>
